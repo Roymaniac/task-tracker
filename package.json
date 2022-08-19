@@ -20,6 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server --watch db.json --port 5000",
+    "prod": "concurrently \"yarn build\" \"yarn run server\"",
     "dev": "concurrently \"yarn run server\" \"yarn start\""
   },
   "eslintConfig": {
